@@ -1,4 +1,4 @@
-package aula02;
+package aula02_05mar;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -20,6 +20,7 @@ public class Pessoa {
         this.email = email;
     }
 
+    
     // Getters e Setters
 
     // Getter para 'id'

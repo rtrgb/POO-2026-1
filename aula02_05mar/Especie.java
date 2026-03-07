@@ -1,4 +1,4 @@
-package aula02;
+package aula02_05mar;
 
 public enum Especie {
     cachorro,

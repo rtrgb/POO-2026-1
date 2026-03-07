@@ -1,4 +1,4 @@
-package aula02;
+package aula02_05mar;
 
 import java.time.LocalDate;
 
@@ -11,6 +11,7 @@ public class Medico extends Pessoa{
         this.crm = crm;
         this.especialidade = especialidade;
     }
+    
 
     public String getCrm() {
         return crm;
