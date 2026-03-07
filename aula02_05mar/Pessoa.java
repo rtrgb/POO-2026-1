@@ -78,15 +78,17 @@ public class Pessoa {
         return idade;
     }
 
+    @Override
     public String toString() {
-        return "Pessoa = " + id + ", Nome='" + nome + "', idade=" + calcularIdade() +
-                ", endereco='" + endereco + "', email='" + email + "'}";
+        return "Pessoa = " + id + ", Nome='" + nome + "',endereco='" + endereco + "', email='" + email + "'}";
     }
 
+    @Override
     public int hashCode() {
         return Objects.hash(email, id);
     }
 
+    @Override
     public boolean equals(Object obj) {
         if (this == obj) 
             return true;

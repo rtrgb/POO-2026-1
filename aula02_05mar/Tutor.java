@@ -1,8 +1,7 @@
 package aula02_05mar;
 
-
-
 import java.time.LocalDate;
+import java.util.Objects;
 
 
 public class Tutor extends Pessoa {
@@ -32,6 +31,8 @@ public class Tutor extends Pessoa {
         this.diaPagamento = diaPagamento;
     }
 
+
+    @Override
     public String toString() {
         return "Tutor = " + getId() +
                 ", nome='" + getNome() + '\'' +
@@ -41,5 +42,18 @@ public class Tutor extends Pessoa {
                 ", profissao='" + profissao + '\'' +
                 ", diaPagamento=" + diaPagamento +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Tutor other = (Tutor) obj;
+        return getId() == other.getId() && Objects.equals(getNome(), other.getNome());
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(),getNome());
     }
 }

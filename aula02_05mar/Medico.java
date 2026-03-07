@@ -29,6 +29,7 @@ public class Medico extends Pessoa{
         this.especialidade = especialidade;
     }
 
+    @Override
     public String toString() {
         return "Medico = " +
                 "id=" + getId() +
@@ -40,5 +41,20 @@ public class Medico extends Pessoa{
                 ", especialidade='" + especialidade + '\'';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
+        Medico medico = (Medico) o;
+
+        return crm.equals(medico.crm);
+    }
+
+    @Override
+    public int hashCode() {
+        return crm.hashCode();
+
+
+    }
 }
