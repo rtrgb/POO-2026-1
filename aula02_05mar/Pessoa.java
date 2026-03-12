@@ -20,55 +20,42 @@ public class Pessoa {
         this.email = email;
     }
 
-    
-    // Getters e Setters
-
-    // Getter para 'id'
     public int getId() {
         return id;
     }
 
-    // Setter para 'id'
     public void setId(int id) {
         this.id = id;
     }
 
-    // Getter para 'nome'
     public String getNome() {
         return nome;
     }
 
-    // Setter para 'nome'
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    // Getter para 'dataNascimento'
     public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    // Setter para 'dataNascimento'
     public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
-    // Getter para 'endereco'
     public String getEndereco() {
         return endereco;
     }
 
-    // Setter para 'endereco'
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
 
-    // Getter para 'email'
     public String getEmail() {
         return email;
     }
 
-    // Setter para 'email'
     public void setEmail(String email) {
         this.email = email;
     }
