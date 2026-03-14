@@ -81,14 +81,13 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Animal = " +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", especie='" + especie + '\'' +
-                ", raca='" + raca + '\'' +
-                ", peso=" + peso +
-                ", sexo='" + sexo + '\'' +
-                ", dataNascimento=" + dataNascimento;
+        return "Animal id=" + id +
+                ",\n nome='" + nome + 
+                ",\n especie='" + especie +
+                ",\n raca='" + raca +
+                ",\n peso=" + peso +
+                ",\n sexo='" + sexo +
+                ",\n dataNascimento=" + dataNascimento;
     }
 
     @Override
