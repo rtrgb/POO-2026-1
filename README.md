@@ -1,4 +1,4 @@
-# 📚 POO - Object Oriented Programming
+# POO - Object Oriented Programming
 
 Repository for the **Object Oriented Programming** course, organized by lesson. Each folder contains the Java classes and exercises developed during that class.
 
@@ -30,7 +30,7 @@ javac *.java
 java Main
 ```
 
-## 👤 Author
+## Author
 
 **Gabriel Buzzi**  
 GitHub: [@rtrgb](https://github.com/rtrgb)
