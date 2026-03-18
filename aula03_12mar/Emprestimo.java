@@ -7,14 +7,16 @@ public class Emprestimo {
     private int id;
     private LocalDate dataEmprestimo;
     private LocalDate dataDevolucao;
-    private LocalDate dataDevoldida;
+    private LocalDate dataDevolvida;
     private statusEmprestimo statusEmprestimo;
+    private Socio socio;
+    private Livro livro;
 
-public Emprestimo(int id, LocalDate dataEmprestimo, LocalDate dataDevolucao, LocalDate dataDevoldida, statusEmprestimo statusEmprestimo) {
+public Emprestimo(int id, LocalDate dataEmprestimo, LocalDate dataDevolucao, LocalDate dataDevolvida, statusEmprestimo statusEmprestimo) {
         this.id = id;
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucao = dataDevolucao;
-        this.dataDevoldida = dataDevoldida;
+        this.dataDevolvida = dataDevolvida;
         this.statusEmprestimo = statusEmprestimo;
     }
 
@@ -42,12 +44,12 @@ public Emprestimo(int id, LocalDate dataEmprestimo, LocalDate dataDevolucao, Loc
         this.dataDevolucao = dataDevolucao;
     }
 
-    public LocalDate getDataDevoldida() {
-        return dataDevoldida;
+    public LocalDate getDataDevolvida() {
+        return dataDevolvida;
     }
 
-    public void setDataDevoldida(LocalDate dataDevoldida) {
-        this.dataDevoldida = dataDevoldida;
+    public void setDataDevolvida(LocalDate dataDevolvida) {
+        this.dataDevolvida = dataDevolvida;
     }
 
     public statusEmprestimo getStatusEmprestimo() {
@@ -57,6 +59,22 @@ public Emprestimo(int id, LocalDate dataEmprestimo, LocalDate dataDevolucao, Loc
     public void setStatusEmprestimo(statusEmprestimo statusEmprestimo) {
         this.statusEmprestimo = statusEmprestimo;
     }
+
+    public Socio getSocio() {
+        return socio;
+    }
+
+    public void setSocio(Socio socio) {
+        this.socio = socio;
+    }
+
+    public Livro getLivro() {
+        return livro;
+    }
+
+    public void setLivro(Livro livro) {
+        this.livro = livro;
+    } 
 
     @Override
     public boolean equals(Object obj) {
@@ -71,14 +89,17 @@ public Emprestimo(int id, LocalDate dataEmprestimo, LocalDate dataDevolucao, Loc
         return Objects.hash(getId(), getDataEmprestimo());
     }
 
-    @Override
-    public String toString() {
-        return "Emprestimo = " + getId() +
-                ",\n dataEmprestimo=" + getDataEmprestimo() +
-                ",\n dataDevolucao=" + getDataDevolucao() +
-                ",\n dataDevoldida=" + getDataDevoldida() +
-                ",\n statusEmprestimo=" + getStatusEmprestimo() +
-                '}' + "\n\n";
-    }
+        @Override
+        public String toString() {
+            return "Emprestimo = " + getId() +
+            ",\n dataEmprestimo=" + getDataEmprestimo() +
+            ",\n dataDevolucao=" + getDataDevolucao() +
+            ",\n dataDevolvida=" + getDataDevolvida() +
+            ",\n statusEmprestimo=" + getStatusEmprestimo() +
+            ",\n socio=" + (socio != null ? socio.getNome() : "não informado") +
+            ",\n livro=" + (livro != null ? livro.getTitulo() : "não informado") +
+            '}' + "\n\n";
+        }
+    
 
 }

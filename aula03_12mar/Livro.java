@@ -9,6 +9,10 @@ public class Livro {
     private int edicao;
     private int paginas;
     private String isbn;
+    private Genero genero;
+    private Autor autor;
+    private Editora editora;
+    
 
     public Livro(int id, String titulo, String anoLancamento, int edicao, int paginas, String isbn) {
     this.id = id;
@@ -65,6 +69,30 @@ public class Livro {
 
     public void setIsbn(String isbn) {
         this.isbn = isbn;
+    }
+
+    public Genero getGenero() {
+        return genero;
+    }
+
+    public void setGenero(Genero genero) {
+        this.genero = genero;
+    }
+
+    public Autor getAutor() {
+        return autor;
+    }
+
+    public void setAutor(Autor autor) {
+        this.autor = autor;
+    }
+
+    public Editora getEditora() {
+        return editora;
+    }
+
+    public void setEditora(Editora editora) {
+        this.editora = editora;
     }
 
     @Override
