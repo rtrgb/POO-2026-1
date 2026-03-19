@@ -13,7 +13,7 @@ public class Pessoa {
 
     // Construtor
     public Pessoa(int id, String nome, LocalDate dataNascimento, String endereco, String email) {
-        this.id = id;
+        this.id = id; //signiifica que o ID do construtor é igual ao ID do objeto (private int id)
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.endereco = endereco;
