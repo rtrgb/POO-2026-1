@@ -12,7 +12,8 @@ public class Emprestimo {
     private Socio socio;
     private Livro livro;
 
-public Emprestimo(int id, LocalDate dataEmprestimo, LocalDate dataDevolucao, LocalDate dataDevolvida, statusEmprestimo statusEmprestimo) {
+    public Emprestimo(int id, LocalDate dataEmprestimo, LocalDate dataDevolucao, LocalDate dataDevolvida,
+            statusEmprestimo statusEmprestimo) {
         this.id = id;
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucao = dataDevolucao;
@@ -74,12 +75,14 @@ public Emprestimo(int id, LocalDate dataEmprestimo, LocalDate dataDevolucao, Loc
 
     public void setLivro(Livro livro) {
         this.livro = livro;
-    } 
+    }
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
         Emprestimo other = (Emprestimo) obj;
         return getId() == other.getId() && Objects.equals(getDataEmprestimo(), other.getDataEmprestimo());
     }
@@ -89,17 +92,18 @@ public Emprestimo(int id, LocalDate dataEmprestimo, LocalDate dataDevolucao, Loc
         return Objects.hash(getId(), getDataEmprestimo());
     }
 
-        @Override
-        public String toString() {
-            return "Emprestimo = " + getId() +
-            ",\n dataEmprestimo=" + getDataEmprestimo() +
-            ",\n dataDevolucao=" + getDataDevolucao() +
-            ",\n dataDevolvida=" + getDataDevolvida() +
-            ",\n statusEmprestimo=" + getStatusEmprestimo() +
-            ",\n socio=" + (socio != null ? socio.getNome() : "não informado") +
-            ",\n livro=" + (livro != null ? livro.getTitulo() : "não informado") +
-            '}' + "\n\n";
-        }
-    
+    @Override
+    public String toString() {
+        return "╔══════════════════════════════\n" +
+                "║ EMPRÉSTIMO #" + getId() + "\n" +
+                "╠══════════════════════════════\n" +
+                "║ Data Empréstimo:  " + getDataEmprestimo() + "\n" +
+                "║ Data Devolução:   " + getDataDevolucao() + "\n" +
+                "║ Data Devolvida:   " + (getDataDevolvida() != null ? getDataDevolvida() : "não devolvido") + "\n" +
+                "║ Status:           " + getStatusEmprestimo() + "\n" +
+                "║ Sócio:            " + (socio != null ? socio.getNome() : "não informado") + "\n" +
+                "║ Livro:            " + (livro != null ? livro.getTitulo() : "não informado") + "\n" +
+                "╚══════════════════════════════\n";
+    }
 
 }

@@ -12,17 +12,16 @@ public class Livro {
     private Genero genero;
     private Autor autor;
     private Editora editora;
-    
 
     public Livro(int id, String titulo, String anoLancamento, int edicao, int paginas, String isbn) {
-    this.id = id;
-    this.titulo = titulo;
-    this.anoLancamento = anoLancamento;
-    this.edicao = edicao;
-    this.paginas = paginas;
-    this.isbn = isbn;
+        this.id = id;
+        this.titulo = titulo;
+        this.anoLancamento = anoLancamento;
+        this.edicao = edicao;
+        this.paginas = paginas;
+        this.isbn = isbn;
     }
-    
+
     public int getId() {
         return id;
     }
@@ -97,8 +96,10 @@ public class Livro {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
         Livro other = (Livro) obj;
         return getId() == other.getId() && Objects.equals(getIsbn(), other.getIsbn());
     }
@@ -110,12 +111,18 @@ public class Livro {
 
     @Override
     public String toString() {
-        return "Livro = " + getId() +
-                ",\n titulo='" + getTitulo() + '\'' +
-                ",\n anoLancamento='" + getAnoLancamento() + '\'' +
-                ",\n edicao=" + getEdicao() +
-                ",\n paginas=" + getPaginas() +
-                ",\n isbn='" + getIsbn() + '\'' +
-                '}' + "\n\n";
+        return "╔══════════════════════════════\n" +
+                "║ LIVRO #" + getId() + "\n" +
+                "╠══════════════════════════════\n" +
+                "║ Título:        " + getTitulo() + "\n" +
+                "║ Ano:           " + getAnoLancamento() + "\n" +
+                "║ Edição:        " + getEdicao() + "\n" +
+                "║ Páginas:       " + getPaginas() + "\n" +
+                "║ ISBN:          " + getIsbn() + "\n" +
+                "║ Gênero:        " + (genero != null ? genero.getDescricao() : "não informado") + "\n" +
+                "║ Autor:         " + (autor != null ? autor.getNome() : "não informado") + "\n" +
+                "║ Editora:       " + (editora != null ? editora.getNome() : "não informado") + "\n" +
+                "╚══════════════════════════════\n";
     }
+
 }

@@ -10,7 +10,6 @@ public class Socio {
     private String telefone;
     private statusSocio statusSocio;
 
-
     public Socio(int id, String nome, String cpf, String email, String telefone, statusSocio statusSocio) {
         this.id = id;
         this.nome = nome;
@@ -70,25 +69,30 @@ public class Socio {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
         Socio other = (Socio) obj;
         return getId() == other.getId() && Objects.equals(getCpf(), other.getCpf());
-    }   
+    }
 
     @Override
     public int hashCode() {
         return Objects.hash(getId(), getCpf());
-    }   
+    }
 
     @Override
     public String toString() {
-        return "Socio = " + getId() +
-                ",\n nome='" + getNome() +
-                ",\n cpf='" + getCpf() +
-                ",\n email='" + getEmail() +
-                ",\n telefone='" + getTelefone() +
-                ",\n statusSocio=" + getStatusSocio() +
-                '}' + "\n\n";
+        return "╔══════════════════════════════\n" +
+                "║ SÓCIO #" + getId() + "\n" +
+                "╠══════════════════════════════\n" +
+                "║ Nome:      " + getNome() + "\n" +
+                "║ CPF:       " + getCpf() + "\n" +
+                "║ Email:     " + getEmail() + "\n" +
+                "║ Telefone:  " + getTelefone() + "\n" +
+                "║ Status:    " + getStatusSocio() + "\n" +
+                "╚══════════════════════════════\n";
     }
+
 }
