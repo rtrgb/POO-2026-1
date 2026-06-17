@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Diagrama de Classes - Sistema de Academia" id="0">
+    <mxGraphModel dx="1605" dy="1121" grid="1" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="100" parent="1" style="swimlane;fontStyle=3;align=center;startSize=40;" value="Pessoa" vertex="1">
+          <mxGeometry height="142" width="203" x="557" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="101" parent="100" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="- id: int&#xa;- nome: String&#xa;- cpf: String&#xa;- email: String&#xa;- senha: String&#xa;- telefone: String" vertex="1">
+          <mxGeometry height="100" width="203" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="200" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;" value="Aluno" vertex="1">
+          <mxGeometry height="153" width="203" x="320" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="201" parent="200" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="- dataMatricula: Date&#xa;- status: String" vertex="1">
+          <mxGeometry height="60" width="203" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="202" parent="200" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="+ fazerMatricula(): void&#xa;+ cancelarMatricula() : void" vertex="1">
+          <mxGeometry height="60" width="203" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="300" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;" value="Instrutor" vertex="1">
+          <mxGeometry height="139" width="203" x="710" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="301" parent="300" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="- cref: String&#xa;- especialidade: String" vertex="1">
+          <mxGeometry height="60" width="203" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="302" parent="300" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="+ montarTreino(): FichaTreino" vertex="1">
+          <mxGeometry height="40" width="203" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="400" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;" value="Administrador" vertex="1">
+          <mxGeometry height="80" width="203" x="1000" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="402" parent="400" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="+ cadastrarPlano(): void&#xa;+ gerarRelatorioFinanceiro(): void" vertex="1">
+          <mxGeometry height="60" width="203" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h1" edge="1" parent="1" source="200" style="endArrow=block;endFill=0;endSize=10;" target="100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h2" edge="1" parent="1" source="300" style="endArrow=block;endFill=0;endSize=10;" target="100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3" edge="1" parent="1" source="400" style="endArrow=block;endFill=0;endSize=10;" target="100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="500" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;" value="Plano" vertex="1">
+          <mxGeometry height="182" width="203" x="50" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="501" parent="500" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="- id: int&#xa;- nome: String&#xa;- descricao: String&#xa;- valor: double&#xa;- duracao: int" vertex="1">
+          <mxGeometry height="100" width="203" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="502" parent="500" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="+ calcularVencimento(): Date" vertex="1">
+          <mxGeometry height="30" width="203" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ap" edge="1" parent="1" source="200" style="endArrow=open;endFill=0;" target="500" value="contrata&#xa;* -------- 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="600" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;" value="Pagamento" vertex="1">
+          <mxGeometry height="192" width="203" x="140" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="601" parent="600" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="- id: int&#xa;- data: Date&#xa;- valor: double&#xa;- metodo: String&#xa;- status: String" vertex="1">
+          <mxGeometry height="110" width="203" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="602" parent="600" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="+ realizarPagamento(): void" vertex="1">
+          <mxGeometry height="30" width="203" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cpag" edge="1" parent="1" source="200" style="endArrow=open;endFill=0;startArrow=ERmandMany;startFill=1;" target="600" value="1 -------- *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="700" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;" value="Treino" vertex="1">
+          <mxGeometry height="192" width="203" x="410" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="701" parent="700" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="- id: int&#xa;- data: Date&#xa;- duracao: int&#xa;- observacao: String" vertex="1">
+          <mxGeometry height="100" width="203" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="702" parent="700" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="+ registrarTreino(): void" vertex="1">
+          <mxGeometry height="30" width="203" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ctr" edge="1" parent="1" source="200" style="endArrow=open;endFill=0;startArrow=ERmandMany;startFill=1;" target="700" value="1 -------- *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="800" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;" value="FichaTreino" vertex="1">
+          <mxGeometry height="192" width="203" x="760" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="801" parent="800" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="- id: int&#xa;- dataInicio: Date&#xa;- dataFim: Date&#xa;- objetivo: String" vertex="1">
+          <mxGeometry height="100" width="203" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="802" parent="800" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="+ adicionarExercicio(): void" vertex="1">
+          <mxGeometry height="40" width="203" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="if" edge="1" parent="1" source="300" style="endArrow=open;endFill=0;" target="800" value="cria&#xa;1 -------- 1..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fa" edge="1" parent="1" source="800" style="endArrow=open;endFill=0;" target="200" value="pertence&#xa;* -------- 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="900" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;" value="Exercicio" vertex="1">
+          <mxGeometry height="213" width="203" x="1050" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="901" parent="900" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;" value="- id: int&#xa;- nome: String&#xa;- descricao: String&#xa;- grupoMuscular: String&#xa;- series: int&#xa;- repeticoes: int&#xa;- carga: double" vertex="1">
+          <mxGeometry height="170" width="203" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fe" edge="1" parent="1" source="800" style="endArrow=open;endFill=0;startArrow=ERzeroToMany;startFill=0;" target="900" value="contém&#xa;1 -------- 1..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

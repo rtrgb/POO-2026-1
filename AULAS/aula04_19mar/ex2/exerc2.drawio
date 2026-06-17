@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="29.6.4">
+  <diagram name="Page-1" id="xbQQBrJnBjZLUxPGPKP0">
+    <mxGraphModel dx="1280" dy="831" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-35" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="766" width="494" x="394" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gerenciar Tutor/Animal" vertex="1">
+          <mxGeometry height="80" width="120" x="474" y="273" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-29" edge="1" parent="1" source="T-fzNEaisVm-3kxxr9K0-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="442.5" y="425.4375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Tutor" vertex="1">
+          <mxGeometry height="60" width="30" x="314" y="374" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-34" edge="1" parent="1" source="T-fzNEaisVm-3kxxr9K0-5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="441.25" y="549.8125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-5" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Veterinário" vertex="1">
+          <mxGeometry height="60" width="30" x="311" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-30" edge="1" parent="1" source="T-fzNEaisVm-3kxxr9K0-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="461.25" y="315.4375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-31" edge="1" parent="1" source="T-fzNEaisVm-3kxxr9K0-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="451.875" y="194.8125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-32" edge="1" parent="1" source="T-fzNEaisVm-3kxxr9K0-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="553.125" y="231.0625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-33" edge="1" parent="1" source="T-fzNEaisVm-3kxxr9K0-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="453.75" y="389.1875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-6" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Atendente" vertex="1">
+          <mxGeometry height="60" width="30" x="314" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-7" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Sistema Externo" vertex="1">
+          <mxGeometry height="60" width="30" x="1000" y="374" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gerenciar Veterinário" vertex="1">
+          <mxGeometry height="80" width="120" x="569" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gerenciar Atendente" vertex="1">
+          <mxGeometry height="80" width="120" x="446" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Agendar Consulta" vertex="1">
+          <mxGeometry height="80" width="120" x="457" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-18" edge="1" parent="1" source="T-fzNEaisVm-3kxxr9K0-11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="-0.0193" y="15" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="654.5757575757577" y="548" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-20" edge="1" parent="1" source="T-fzNEaisVm-3kxxr9K0-11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" target="T-fzNEaisVm-3kxxr9K0-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="605.4827586206898" y="745.3103448275863" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-26" connectable="0" parent="T-fzNEaisVm-3kxxr9K0-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="0.117" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-21" edge="1" parent="1" source="T-fzNEaisVm-3kxxr9K0-11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" target="T-fzNEaisVm-3kxxr9K0-14" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Realizar Consulta" vertex="1">
+          <mxGeometry height="80" width="120" x="453" y="508" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Emitir Receita Tradicional" vertex="1">
+          <mxGeometry height="80" width="120" x="723" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-28" edge="1" parent="1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="979.37" y="468.78" as="sourcePoint" />
+            <mxPoint x="864.9994973084689" y="602.9975466378842" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;meta charset=&quot;utf-8&quot;&gt;Emitir Receita Online" vertex="1">
+          <mxGeometry height="80" width="120" x="759" y="603" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Solicitar Exame" vertex="1">
+          <mxGeometry height="80" width="120" x="587" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;div class=&quot;overflow-x-auto w-full px-2 mb-6&quot;&gt;&lt;div class=&quot;overflow-x-auto w-full px-2 mb-6&quot;&gt;&lt;table class=&quot;min-w-full border-collapse text-sm leading-[1.7] whitespace-normal&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;border-b-0.5 border-border-300/30 py-2 pr-4 align-top&quot;&gt;Registrar Histórico&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;h2 class=&quot;text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold&quot;&gt;&lt;/h2&gt;&lt;/div&gt;&lt;h2 class=&quot;text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold&quot;&gt;&lt;/h2&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="659" y="513" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-22" edge="1" parent="1" source="T-fzNEaisVm-3kxxr9K0-11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.031;entryY=0.382;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;endArrow=open;endFill=0;" target="T-fzNEaisVm-3kxxr9K0-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T-fzNEaisVm-3kxxr9K0-25" connectable="0" parent="T-fzNEaisVm-3kxxr9K0-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2057" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
