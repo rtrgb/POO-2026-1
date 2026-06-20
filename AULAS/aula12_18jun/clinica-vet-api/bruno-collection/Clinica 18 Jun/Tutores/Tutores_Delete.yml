@@ -1,0 +1,18 @@
+info:
+  name: Tutores_Delete
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: http://localhost:8081/tutores/2
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,26 @@
+info:
+  name: Tutores_Post
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:8081/tutores/
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Ricardo Martins",
+        "dataNascimento": "1979-02-28",
+        "cpf": "44444444444",
+        "rg": "4444444",
+        "email": "ricardo.martins@email.com",
+        "telefone": "(47) 99999-4444"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

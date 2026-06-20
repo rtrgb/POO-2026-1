@@ -1,0 +1,32 @@
+info:
+  name: Animais_Post
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:8081/animais/
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Luna",
+        "raca": "Golden Retriever",
+        "sexo": "FEMEA",
+        "especie": "CANINA",
+        "dataNascimento": "2021-05-22",
+        "rga": "RGA003",
+        "castrado": true,
+        "corPelagem": "Dourado",
+        "porte": "GRANDE",
+        "peso": 25.3,
+        "observacoes": "Animal calmo.",
+        "idTutor": 51
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

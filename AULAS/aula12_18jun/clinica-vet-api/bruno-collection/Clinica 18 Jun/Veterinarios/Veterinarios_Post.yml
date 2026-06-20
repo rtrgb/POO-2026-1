@@ -1,0 +1,35 @@
+info:
+  name: Veterinarios_Post
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:8081/veterinarios/
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Camila Ferreira",
+        "cpf": "78912345600",
+        "crmv": "324",
+        "email": "camila.ferreira@vetclinica.com",
+        "telefone": "47985554433",
+        "especialidade": "CARDIOLOGIA",
+        "endereco": {
+          "cep": "88301-400",
+          "rua": "Rua São Paulo",
+          "numero": "300",
+          "complemento": "Casa",
+          "bairro": "Fazenda",
+          "cidade": "Itajaí",
+          "estado": "SC"
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
