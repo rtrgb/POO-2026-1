@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="p7iuL0rXAyCJPVEB1Nly" name="Page-1">
+    <mxGraphModel dx="1184" dy="776" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#99FFCC" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-18" parent="1" style="swimlane;fontStyle=1;align=center;startSize=26;" value="Socio" vertex="1">
+          <mxGeometry height="170" width="240" x="740" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-19" parent="Q5Il8WsWaBzmQa7nGzDp-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;" value="- numCartao: int&#xa;- nome: String&#xa;- endereco: String&#xa;- telefone: String&#xa;- email: String" vertex="1">
+          <mxGeometry height="144" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-20" parent="1" style="swimlane;fontStyle=1;align=center;startSize=26;" value="Categoria" vertex="1">
+          <mxGeometry height="118" width="240" x="1260" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-21" parent="Q5Il8WsWaBzmQa7nGzDp-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;" value="- idCategoria: int&#xa;- descricao: String&#xa;- valorMensalidade: double" vertex="1">
+          <mxGeometry height="92" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-22" parent="1" style="swimlane;fontStyle=1;align=center;startSize=26;" value="Dependente" vertex="1">
+          <mxGeometry height="144" width="240" x="740" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-23" parent="Q5Il8WsWaBzmQa7nGzDp-22" style="text;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;" value="- numCartao: int&#xa;- nome: String&#xa;- parentesco: String&#xa;- email: String" vertex="1">
+          <mxGeometry height="118" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-24" parent="1" style="swimlane;fontStyle=1;align=center;startSize=26;" value="Mensalidade" vertex="1">
+          <mxGeometry height="196" width="240" x="1260" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-25" parent="Q5Il8WsWaBzmQa7nGzDp-24" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;overflow=hidden;" value="- idMensalidade: int&#xa;- dataVencimento: Date&#xa;- valor: double&#xa;- dataPagamento: Date&#xa;- juros: double&#xa;- valorPago: double&#xa;- quitada: boolean" vertex="1">
+          <mxGeometry height="170" width="240" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-26" edge="1" parent="1" source="Q5Il8WsWaBzmQa7nGzDp-18" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;endFill=0;endSize=8;strokeColor=#333333;" target="Q5Il8WsWaBzmQa7nGzDp-22" value="possui">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-27" connectable="0" parent="Q5Il8WsWaBzmQa7nGzDp-26" style="resizable=0;html=1;align=center;verticalAlign=bottom;labelBackgroundColor=none;fontSize=12;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.85" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-28" connectable="0" parent="Q5Il8WsWaBzmQa7nGzDp-26" style="resizable=0;html=1;align=center;verticalAlign=top;labelBackgroundColor=none;fontSize=12;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.85" as="geometry">
+            <mxPoint x="20" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-29" edge="1" parent="1" source="Q5Il8WsWaBzmQa7nGzDp-18" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;endSize=8;strokeColor=#333333;" target="Q5Il8WsWaBzmQa7nGzDp-20" value="pertence a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-30" connectable="0" parent="Q5Il8WsWaBzmQa7nGzDp-29" style="resizable=0;html=1;align=right;verticalAlign=bottom;labelBackgroundColor=none;fontSize=12;fontStyle=1;" value="1..*" vertex="1">
+          <mxGeometry relative="1" x="-0.85" as="geometry">
+            <mxPoint x="-3" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-31" connectable="0" parent="Q5Il8WsWaBzmQa7nGzDp-29" style="resizable=0;html=1;align=left;verticalAlign=bottom;labelBackgroundColor=none;fontSize=12;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.85" as="geometry">
+            <mxPoint x="13" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-32" edge="1" parent="1" source="Q5Il8WsWaBzmQa7nGzDp-18" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;endSize=8;strokeColor=#333333;" target="Q5Il8WsWaBzmQa7nGzDp-24" value="paga">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1120" y="485" />
+              <mxPoint x="1120" y="878" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-34" connectable="0" parent="Q5Il8WsWaBzmQa7nGzDp-32" style="resizable=0;html=1;align=center;verticalAlign=bottom;labelBackgroundColor=none;fontSize=12;fontStyle=1;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.85" as="geometry">
+            <mxPoint x="40" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q5Il8WsWaBzmQa7nGzDp-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Diagrama de Classes - Gabriel Buzzi" vertex="1">
+          <mxGeometry height="30" width="366" x="991" y="281" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
